@@ -23,12 +23,6 @@ export const ShopRouter = () => {
           <Route path={RouteName.home} element={<Marketplace />} />
           <Route path={RouteName.marketplaceMint} element={<SingleOrder />} />
           <Route path={RouteName.sell} element={<MyCollection />} />
-          <Route path={RouteName.auctionsView} element={<AuctionsView />} />
-          <Route path={RouteName.drop} element={<Drop />} />
-          <Route path={RouteName.activityView} element={<ActivityView />} />
-          <Route path={RouteName.customToken} element={<CustomTokenMarketplace />} />
-          <Route path={RouteName.multipleCollection} element={<MarketplaceWithFilter />} />
-          <Route path={RouteName.marketplaceWithUrl} element={<MarketplaceWithUrl />} />
         </Routes>
       </MainContainer>
     </main>
