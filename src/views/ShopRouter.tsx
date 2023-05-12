@@ -1,12 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import styled from 'styled-components';
-import ActivityView from './ActivityView';
-import AuctionsView from './AuctionsView';
-import CustomTokenMarketplace from './CustomTokenMarketplace';
-import Drop from './Drop';
 import Marketplace from './Marketplace';
-import MarketplaceWithFilter from './MarketplaceWithFilter';
-import MarketplaceWithUrl from './MarketplaceWithUrl';
 import MyCollection from './MyCollection';
 import SingleOrder from './SingleOrder';
 import TopNav from '@/components/TopNav';
@@ -16,16 +10,16 @@ import { useUpdateShop } from '@/hooks/useUpdateShop';
 export const ShopRouter = () => {
   useUpdateShop();
   return (
-    <main>
-      <MainContainer>
-        <TopNav />
-        <Routes>
-          <Route path={RouteName.home} element={<Marketplace />} />
-          <Route path={RouteName.marketplaceMint} element={<SingleOrder />} />
-          <Route path={RouteName.sell} element={<MyCollection />} />
-        </Routes>
-      </MainContainer>
-    </main>
+      <main>
+        <MainContainer>
+          <TopNav />
+          <Routes>
+            <Route path={RouteName.home} element={<Marketplace />} />
+            <Route path={RouteName.marketplaceMint} element={<SingleOrder />} />
+            <Route path={RouteName.sell} element={<MyCollection />} />
+          </Routes>
+        </MainContainer>
+      </main>
   );
 };
 const MainContainer = styled.div`
